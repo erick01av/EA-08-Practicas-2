@@ -1,0 +1,88 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: bisque;
+    font-family: Arial, sans-serif;
+}
+
+.encabezado {
+    position: fixed;
+    background-color: #FFA500; 
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navegacion {
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 32px; /* Reduje el tamaño del logo */
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu-item {
+    margin: 0 10px;
+}
+
+.nav-menu-link {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+    transition: background-color 0.3s; 
+}
+
+.nav-menu-link:hover {
+    background-color: #024070;
+}
+
+aside {
+    position: fixed;
+    background-color: gray;
+    color: white;
+    top: 80px; /* Alineado con la parte inferior del encabezado */
+    left: 0;
+    bottom: 20px;
+    width: 20%;
+    overflow-y: auto; /* Añadí desplazamiento cuando sea necesario */
+}
+
+section {
+    position: fixed;
+    background-color: whitesmoke;
+    color: black;
+    top: 80px; /* Alineado con la parte inferior del encabezado */
+    left: 20%;
+    bottom: 20px;
+    width: 80%;
+    overflow-y: auto; /* Añadí desplazamiento cuando sea necesario */
+}
+
+footer {
+    position: fixed;
+    text-align: center;
+    background-color: black;
+    color: white;
+    left: 0;
+    bottom: 0;
+    height: 40px; /* Aumenté la altura del pie de página */
+    width: 100%;
+    line-height: 40px; /* Alineado verticalmente el texto en el pie de página */
+}
